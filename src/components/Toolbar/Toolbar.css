@@ -3,18 +3,23 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 56px;
+    height: 300px;
 }
 
 .toolbar__navigation {
     display: flex;
     height: 100%;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 1rem;
 }
 
 .toolbar__logo {
     margin-left: 1rem;
+}
+
+.toolbar__logo img{
+    height: 300px;
+    width: 300px;
 }
 
 .toolbar__logo a {
@@ -29,9 +34,11 @@
 
 .toolbar_navigation_items ul {
     list-style: none;
-    margin: 0;
+    margin-top: 150px;
     padding: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .toolbar_navigation_items li {
