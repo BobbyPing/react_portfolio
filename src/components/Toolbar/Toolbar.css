@@ -48,11 +48,14 @@
 .toolbar_navigation_items a{
     color: white;
     text-decoration: none;
+    transition: .80s;
 }
 
 .toolbar_navigation_items a:hover,
 .toolbar_navigation_items a:active {
-    color: orangered;
+    color: lightcoral;
+    letter-spacing: 1px;
+    text-shadow: 0 0 50px #780206;
 }
 
 @media (max-width: 768px) {

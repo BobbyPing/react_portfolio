@@ -3,7 +3,17 @@
 }
 
 .content {
+  color: white;
   margin-top: 350px;
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.work{
+  background: black;
+  height: 600px;
+  color: white;
   display: flex;
   justify-content: center;
 }
