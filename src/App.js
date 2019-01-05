@@ -7,12 +7,29 @@ import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 
 class App extends Component {
+  state = {
+    sideDrawerOpen: false
+  };
+  
+  drawerToggleClickHandler = () => {
+    this.setState((prevState) => {
+      return {sideDrawerOpen: !prevState.sideDraweOpen};
+    });
+  };
+
   render() {
+    let sideDrawer;
+    let backdrop;
+
+    if (this.state.sideDrawerOpen) {
+      sideDrawer = <SideDrawer />
+      backdrop = <Backdrop />
+    }
     return (
       <div className="App">
-        <Toolbar />
-        <SideDrawer />
-        <Backdrop />
+        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+        {sideDrawer}
+        {backdrop}
         <div className = "content">
         <p> This is the page Content!</p>
         </div>
