@@ -5,7 +5,6 @@ import './App.css';
 import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
-import code from './code.mp4';
 
 class App extends Component {
   state = {
@@ -39,10 +38,11 @@ class App extends Component {
         <div className="work" id ="work">
         <h1>Work Goes Here</h1>
       </div>
-        <div className="Contact" id ="contact">
-        <video className='videoTag' autoPlay loop muted>
+        <div className="contact" id ="contact">
+        {/*<video className='videoTag' autoPlay loop muted>
           <source src={code} type='video/mp4' />
-        </video>
+    </video>-->*/}
+        <h1>Contact Me Goes Here</h1>
         </div>
       </div>
 

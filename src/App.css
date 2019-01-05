@@ -12,8 +12,15 @@
 
 .work{
   background: black;
-  height: 600px;
+  height: 900px;
   color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.contact {
+  color: white;
+  height: 600px;
   display: flex;
   justify-content: center;
 }
