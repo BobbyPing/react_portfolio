@@ -49,7 +49,7 @@ class App extends Component {
             {({ isInView }) =>
               <Bounce bottom hide={!isInView}> 
             <div className = "hero_content">
-              <h2>Hello! My name is Bobby Ping.  I am a Front End/React Developer and UI/UX Designer/Developer</h2>
+              <h2>Front End/React Developer and UI/UX Designer/Developer</h2>
             
             </div>
             </Bounce>
