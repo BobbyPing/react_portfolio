@@ -9,6 +9,7 @@ import bp from './bp.JPG';
 import WhenInView from './components/About/About';
 import Bounce from 'react-reveal/Bounce';
 
+
 class App extends Component {
   state = {
     sideDrawerOpen: false
@@ -32,18 +33,40 @@ class App extends Component {
     }
     return (
       <div className="App">
+
+      
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
+
+      
+
         <div className = "content" id="about_me">
+
+        <div className = "hero_section">
+          <div className = "hero_content_wrapper">
+          <WhenInView>
+            {({ isInView }) =>
+              <Bounce bottom hide={!isInView}> 
+            <div className = "hero_content">
+              <h2>Hello! My name is Bobby Ping.  I am a Front End/React Developer and UI/UX Designer/Developer</h2>
+            
+            </div>
+            </Bounce>
+              }
+            </WhenInView>
+          </div>
+        </div>
           <div className = "portrait">
             <img alt="bp" src ={bp}></img>
           </div>
+
+   
           <WhenInView>
             {({ isInView }) =>
               <Bounce bottom hide={!isInView}>      
                    <h1> About Me </h1>
-                   <h2>Hello! My name is Bobby Ping.  I am a Front End/React Developer and UI/UX Designer/Developer</h2>
+                   
                 <div className ="bio">
                  <h3>
                  I am newer to Southern Utah and absolutely love it here! I love the outdoors
@@ -79,9 +102,7 @@ class App extends Component {
         <h1>Work Goes Here</h1>
       </div>
         <div className="contact" id ="contact">
-        {/*<video className='videoTag' autoPlay loop muted>
-          <source src={code} type='video/mp4' />
-    </video>-->*/}
+
         <h1>Contact Me Goes Here</h1>
         </div>
     </div>
