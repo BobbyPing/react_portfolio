@@ -60,6 +60,10 @@
 
 @media (max-width: 768px) {
 
+    .toolbar{
+        position: relative;
+    }
+
 
     .toolbar_navigation_items{
         display: none;
@@ -75,14 +79,15 @@
     }
 
     .toolbar__logo img{
-        padding-top: 100px;
+        padding-top: 80px;
         height: 150px;
         width: 150px;
-        padding-right: 30px;
+
     }
 
     .toolbar__toggle-button {
         margin: 0;
+        position: fixed;
         
     }
     
