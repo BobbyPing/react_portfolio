@@ -66,6 +66,14 @@
 }
 
 @media (max-width: 768px) {
+
+  .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
   
   .react-reveal {
     display: flex;

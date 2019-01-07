@@ -59,21 +59,41 @@
 }
 
 @media (max-width: 768px) {
+
+
     .toolbar_navigation_items{
         display: none;
     }
+
+    .toolbar__logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .toolbar__logo img{
+        padding-top: 100px;
+        height: 150px;
+        width: 150px;
+        padding-right: 30px;
+    }
+
+    .toolbar__toggle-button {
+        margin: 0;
+        
+    }
+    
+
 }
 
 @media (min-width: 769px) {
     .toolbar__toggle-button {
         display: none;
     }
-
-    .toolbar__logo img{
-        position: fixed;
     
-    }
-
     .toolbar__logo {
         margin-left: 0;
     }
