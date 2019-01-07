@@ -3,24 +3,61 @@
 }
 
 .content {
-  color: white;
+  border-top: groove;
+  border-color: #f6e7e8;
+  border-width: 2px;
+  border-bottom: groove;
+  border-color: #f6e7e8;
+  border-width: 2px;
+  background-color: black;
+  color: #f6e7e8;
   margin-top: 350px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 600px;
+  align-items: center;
+  height: 100%;
+}
+
+.portrait{
+
+  margin-top: 80px;
+
+}
+
+.portrait img{
+  height: 350px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.bio {
+  width: 800px;
+  font-size: 1.5rem;
+}
+
+.button {
+  margin-bottom: 80px;
 }
 
 .work{
-  background: black;
   height: 900px;
-  color: white;
+  color: #f6e7e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  color: #f6e7e8;
+  height: 600px;
   display: flex;
   justify-content: center;
 }
 
-.contact {
-  color: white;
-  height: 600px;
-  display: flex;
-  justify-content: center;
+@media (max-width: 768px) {
+  .bio {
+    width: 100%;
+    font-size: 1rem;
+  }
 }
