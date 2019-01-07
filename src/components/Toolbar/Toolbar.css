@@ -69,7 +69,14 @@
         display: none;
     }
 
+    .toolbar__logo img{
+        position: fixed;
+    
+    }
+
     .toolbar__logo {
         margin-left: 0;
     }
+
+ 
 }
