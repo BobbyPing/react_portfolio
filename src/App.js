@@ -8,6 +8,9 @@ import Backdrop from './components/Backdrop/Backdrop';
 import bp from './bp.JPG';
 import macbookml from './macbookml.png';
 import course_schedule from './course_schedule.png';
+import mb_hoa from './mb_hoa.png';
+import product from './product.png';
+import fries from './fries.png';
 
 import WhenInView from './components/About/About';
 import Bounce from 'react-reveal/Bounce';
@@ -60,14 +63,15 @@ class App extends Component {
             </WhenInView>
           </div>
         </div>
-          <div className = "portrait">
-            <img alt="bp" src ={bp}></img>
-          </div>
+          
 
    
           <WhenInView>
             {({ isInView }) =>
-              <Bounce bottom hide={!isInView}>      
+              <Bounce bottom hide={!isInView}>   
+              <div className = "portrait">
+            <img alt="bp" src ={bp}></img>
+          </div>   
                    <h1> About Me </h1>
                    
                 <div className ="bio">
@@ -109,7 +113,7 @@ class App extends Component {
                 <h1> Here Is Some Of My Work</h1>
               </div>
               
-              <div clasName = "squares_wrapper">
+              <div className = "squares_wrapper">
                   <div className="squares">
                     <div className="square">
                       <div className="img_wrapper">
@@ -122,9 +126,10 @@ class App extends Component {
                         Click on the photo to play!</h4>
                       </div>
                     </div>
+                    
                     <div className="square">
 
-                    <div className="square_text_wrapper">
+                      <div className="square_text_wrapper">
                         <h1>React Course Scheduler</h1>
                         <h4>Built a course scheduling app using react.<br></br>
                         Please click the picture to see it in action!</h4>
@@ -132,7 +137,43 @@ class App extends Component {
                       <div className="img_wrapper">
                         <a href="https://bpmadlib.herokuapp.com"target="_blank" rel="noopener noreferrer"><img alt="cs" src= { course_schedule } ></img></a>
                       </div>
-                    </div>                  
+                    </div>
+
+                    <div className="square">
+                      <div className="img_wrapper_am">
+                        <a href="https://bp-asset-management.herokuapp.com/"target="_blank" rel="noopener noreferrer"><img alt="hoa" src= { mb_hoa } ></img></a>
+                      </div>
+                    
+                      <div className="square_text_wrapper">
+                        <h1>React Asset Management</h1>
+                        <h4>An Asset Management app built in react.<br></br>
+                        Please click the photo to see the application!</h4>
+                      </div>
+                    </div>  
+
+                    <div className="square">
+
+                      <div className="square_text_wrapper">
+                        <h1>Designs and Mockups</h1>
+                        <h4>Here is a link to some of my mockups and designs<br></br>
+                        Please click the picture to check them out!</h4>
+                      </div>
+                      <div className="img_wrapper">
+                        <a href="https://dribbble.com/bobbyping"target="_blank" rel="noopener noreferrer"><img alt="cs" src= { product } ></img></a>
+                      </div>
+                    </div> 
+
+                    <div className="square">
+                      <div className="img_wrapper_am">
+                        <a href="https://bp-asset-management.herokuapp.com/"target="_blank" rel="noopener noreferrer"><img alt="fr" src= { fries } ></img></a>
+                      </div>
+                    
+                      <div className="square_text_wrapper">
+                        <h1>Devcamp Fries</h1>
+                        <h4>A resposinve website built in HTML, CSS, and Flask<br></br>
+                        Please click the photo to see the site!</h4>
+                      </div>
+                    </div>                 
                 </div>
               </div>
 

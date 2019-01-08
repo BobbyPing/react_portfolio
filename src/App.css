@@ -79,27 +79,33 @@
   color: #f6e7e8;
 }
 
-.squares_wrapper {
+.react-reveal.squares_wrapper {
   display: flex;
   justify-content: center;
 }
 
-.squares_wrapper > .squares {
+.squares {
   width: 1000px;
 }
 
-.squares_wrapper > .squares > .square {
+.square {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: -4px;
 }
 
-.square > .img_wrapper img {
+.img_wrapper img {
   width: 650px;
   height: 400px;
 }
 
-.square > .square_text_wrapper {
+.img_wrapper_am img{
+  width: 650px;
+  height: 400px;
+  padding-top: 50px;
+}
+
+.square_text_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
