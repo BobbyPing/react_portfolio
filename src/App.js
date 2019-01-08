@@ -6,6 +6,9 @@ import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 import bp from './bp.JPG';
+import macbookml from './macbookml.png';
+import course_schedule from './course_schedule.png';
+
 import WhenInView from './components/About/About';
 import Bounce from 'react-reveal/Bounce';
 
@@ -92,18 +95,52 @@ class App extends Component {
                 </Bounce>
               }
             </WhenInView>
-
         </div>
   
     
 
     
         <div className="work" id ="work">
-        <h1>Work Goes Here</h1>
-      </div>
-        <div className="contact" id ="contact">
+            <WhenInView>
+                {({ isInView }) =>
+              <Bounce bottom hide={!isInView}> 
+              
+              <div className="header">
+                <h1> Here Is Some Of My Work</h1>
+              </div>
+              
+              <div clasName = "squares_wrapper">
+                  <div className="squares">
+                    <div className="square">
+                      <div className="img_wrapper">
+                        <a href="https://bpmadlib.herokuapp.com"target="_blank" rel="noopener noreferrer"><img alt="ml" src= { macbookml } ></img></a>
+                      </div>
+                    
+                      <div className="square_text_wrapper">
+                        <h1>React Madlibs</h1>
+                        <h4>A fun little MadLibs game created in react and styled in SCSS.<br></br>
+                        Click on the photo to play!</h4>
+                      </div>
+                    </div>
+                    <div className="square">
 
-        <h1>Contact Me Goes Here</h1>
+                    <div className="square_text_wrapper">
+                        <h1>React Course Scheduler</h1>
+                        <h4>Built a course scheduling app using react.<br></br>
+                        Please click the picture to see it in action!</h4>
+                      </div>
+                      <div className="img_wrapper">
+                        <a href="https://bpmadlib.herokuapp.com"target="_blank" rel="noopener noreferrer"><img alt="cs" src= { course_schedule } ></img></a>
+                      </div>
+                    </div>                  
+                </div>
+              </div>
+
+              </Bounce>
+              }
+              </WhenInView>
+          
+
         </div>
     </div>
 

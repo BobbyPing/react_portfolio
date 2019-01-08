@@ -46,8 +46,6 @@
   background: #f6e7e8;
 }
 
-
-
 .content {
   border-top: groove;
   border-color: #f6e7e8;
@@ -77,17 +75,39 @@
   border-radius: 50%;
 }
 
-
-
-
-
 .work{
-  height: 900px;
   color: #f6e7e8;
+}
+
+.squares_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.squares_wrapper > .squares {
+  width: 1000px;
+}
+
+.squares_wrapper > .squares > .square {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: -4px;
+}
+
+.square > .img_wrapper img {
+  width: 650px;
+  height: 400px;
+}
+
+.square > .square_text_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 42px;
 }
+
+
 
 .contact {
   color: #f6e7e8;
